@@ -1,0 +1,297 @@
+ @import "icons.css";
+
+/*
+	Userpay Donate Form
+*/
+
+.userpay_donate_form {
+    padding: 25px;
+    min-width: 280px;
+    min-height: 350px;
+	box-sizing:border-box;
+	overflow:hidden;
+}
+
+.userpay_donate_form h4,
+.userpay_donate_form h5{ margin:0; padding:0; text-align:center;  }
+.userpay_donate_form h4{ color:#333; font-size:22px; margin-bottom:15px;  }
+.userpay_donate_form h5{ color:#000; font-size:14px; }
+h5.userpay_payments_change_label{ margin-top:15px;margin-bottom:15px; }
+
+.userpay_payments_buttons{
+	
+}
+
+.userpay_payments_buttons .userpay_payments_buttons_hidden{
+	display:none;
+}
+.userpay_payments_buttons .userpay_payments_show_hidden{
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	padding:10px;
+}
+
+.userpay_payment_button {
+    width: 88px;
+    height: 31px;
+    margin: 3px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.userpay_payment_button:hover{
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.5);
+	box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.5);
+}
+
+.userpay_payments_inputs{
+	margin-top:10px; 
+	margin-bottom:10px;
+}
+.userpay_payments_inputs .input-has-suffix{
+	display:flex;
+    align-items:center;
+}
+.userpay_donate_form.userpay_donate_form_modal .userpay_payments_inputs .input-has-suffix{
+	width:100%;
+}
+.userpay_payments_inputs .input-has-suffix .prefix,
+.userpay_payments_inputs .input-has-suffix .suffix,
+.userpay_payments_inputs .input-has-suffix input.input {
+    height: auto !important;
+    line-height: 28px !important;
+    padding: 6px 8px !important;
+	box-sizing:border-box;
+	margin:0 !important;
+	font-size:14px !important
+}
+.userpay_payments_inputs .input-has-suffix .prefix,
+.userpay_payments_inputs .input-has-suffix .suffix {
+    color: #000;
+    background: #f9f9f9;
+    border: solid 1px rgba(0,0,0,.3);
+}
+.userpay_payments_inputs .input-has-suffix .prefix {
+    border-right: none;
+}
+.userpay_payments_inputs .input-has-suffix .suffix{
+    border-left: none;
+}
+.userpay_payments_inputs .input-has-suffix input.input {
+    min-width: 100px;
+	font-size:18px !important;
+	border: solid 1px rgba(0,0,0,.3);
+	color:#000;
+}
+
+.userpay_donate_form .userpay_payments_inputs .input-has-suffix input.input {
+	text-align:center;
+}
+
+.userpay_donate_form.userpay_donate_form_modal .userpay_payments_buttons{
+	text-align:center;
+}
+
+
+
+/*
+	Userpay Donate Form Payments List Style = default
+*/
+
+.userpay_payments_panel_wrapper{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	background:rgba(0,0,0,.85);
+	transition: all 0.5s ease;
+}
+
+.userpay_payments_panel_wrapper.is_hidden{
+	left: -150vh;
+}
+
+.userpay_payments_panel_list{
+	padding:25px 15px 25px 15px;	
+	text-align:center;
+}
+
+
+.userpay_payments_change_wrapper{
+	display:flex;
+    align-items:center;
+	margin:0 auto;
+	background:#fff;
+	padding:5px 0;
+	border:1px solid rgba(0,0,0,.3);
+}
+.userpay_payments_change_wrapper .userpay_payments_change{
+	padding:0 15px;
+	height: 31px;
+	line-height:31px;
+	text-decoration:none !important;
+	color:#c00 !important;
+	margin-right:5px;
+}
+.userpay_payments_change_wrapper .userpay_payments_change i{ margin-left:-5px; }
+
+.userpay_payments_change_wrapper .userpay_payment_button {
+    width: 88px;
+    height: 31px;
+    margin: 0;
+	cursor:default;
+}
+.userpay_payments_change_wrapper .userpay_payment_button:hover{
+	box-shadow:   none;
+}
+
+.userpay_payments_button_wrapper{
+	margin-top:20px;
+	text-align:center;
+}
+.userpay_payments_button_wrapper .userpay_payment_button_puy{
+	display:inline-block;
+    padding:0 55px;
+    height: 34px;
+	line-height:34px;
+	text-decoration:none !important;
+	color:#fff !important;
+	background:#c00;
+	text-align:center;
+	margin:0 auto;
+}
+
+.userpay_payments_change_hint{
+	text-align:center;
+	padding-top:15px;
+}
+
+.field-pay-btn {
+    background: cornflowerblue;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    display: inline-block;
+    padding: 3px 7px;
+    opacity: 0.7;
+    border-radius: 4px;
+}
+
+.field-pay-btn:hover {
+    opacity: 1;
+    color: white;
+}
+
+table.history {
+    width: 100%;
+}
+
+table.history tr {
+    height: 32px;
+}
+
+table.history tr:first-child {
+    background: #f3f3f3;
+    border-bottom: 1px solid #cacaca;
+    font-size: 12px;
+    color: #8c8c8c;
+}
+
+table.history tr:nth-child(2n) {
+    background: #f9f9f9;
+}
+
+table.history tr > td {
+    font-size: 12px;
+    text-align: center;
+}
+
+table.history tr > td:last-child {
+    color: green;
+}
+
+table.history .negative {
+    color: red !important;
+}
+
+.userpay_balance_block {
+    margin-bottom: 10px;
+}
+
+.userpay_balance_block .add_balance a{
+    background: #70b967;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.userpay_balance_block .add_balance a:hover{
+    background: coral;
+}
+
+.userpay_balance_block .field {
+    font-size: 16px;
+    font-weight: bold;
+    color: cadetblue;
+    background-image: url("/templates/default/images/icons/coin.png");
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+.up_partner_tbl {
+    width: 100%;
+}
+
+.up_partner_tbl tr:first-child {
+    background: gainsboro;
+}
+
+.up_partner_tbl th {
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.up_partner_tbl tr td:nth-child(2) {
+    padding: 0 0 4px 10px;
+}
+
+.up_pre_link {
+    margin: -5px 0 0 0;
+    color: silver;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.up_post_link {
+    margin: 5px 0 0 0;
+    font-size: 13px;
+    line-height: 15px;
+    font-style: italic;
+    color: silver;
+}
+
+a.paid_field {
+    background-color: #2980b9;
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+    padding-left: 25px;
+    font-size: 13px;
+    border-radius: 3px;
+    background-position-y: center;
+    background-position-x: 5px;
+    background-repeat: no-repeat;
+    background-image: url("/templates/default/images/icons/coin.png");
+    opacity: 0.8;
+}
+
+a.paid_field:hover {
+    opacity: 1;
+}

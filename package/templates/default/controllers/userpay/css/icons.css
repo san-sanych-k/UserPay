@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'userpay';
+  src: url('../font/userpay.eot?20999880');
+  src: url('../font/userpay.eot?20999880#iefix') format('embedded-opentype'),
+       url('../font/userpay.woff2?20999880') format('woff2'),
+       url('../font/userpay.woff?20999880') format('woff'),
+       url('../font/userpay.ttf?20999880') format('truetype'),
+       url('../font/userpay.svg?20999880#userpay') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'userpay';
+    src: url('../font/userpay.svg?20999880#userpay') format('svg');
+  }
+}
+*/
+ 
+ [class^="upi-"]:before, [class*=" upi-"]:before {
+  font-family: "userpay";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.upi-left-open:before { content: '\e800'; } /* '' */
+.upi-right-open:before { content: '\e801'; } /* '' */
+.upi-left:before { content: '\e802'; } /* '' */
+.upi-right:before { content: '\e803'; } /* '' */
+.upi-right-open-outline:before { content: '\e804'; } /* '' */
+.upi-left-open-outline:before { content: '\e805'; } /* '' */
+.upi-up:before { content: '\e806'; } /* '' */
+.upi-down:before { content: '\e807'; } /* '' */
+.upi-down-dir:before { content: '\e808'; } /* '' */
+.upi-up-dir:before { content: '\e809'; } /* '' */
+.upi-left-dir:before { content: '\e80a'; } /* '' */
+.upi-right-dir:before { content: '\e80b'; } /* '' */
+.upi-down-open:before { content: '\e80c'; } /* '' */
+.upi-left-open-1:before { content: '\e80d'; } /* '' */
+.upi-right-open-1:before { content: '\e80e'; } /* '' */
+.upi-up-open:before { content: '\e80f'; } /* '' */
+.upi-right-circle:before { content: '\e810'; } /* '' */
+.upi-left-circle:before { content: '\e811'; } /* '' */
+.upi-money:before { content: '\e812'; } /* '' */
+.upi-arrow-combo:before { content: '\e813'; } /* '' */
+.upi-right-1:before { content: '\e814'; } /* '' */
+.upi-left-1:before { content: '\e815'; } /* '' */
+.upi-up-1:before { content: '\e816'; } /* '' */
+.upi-down-1:before { content: '\e817'; } /* '' */
+.upi-basket:before { content: '\e818'; } /* '' */
+.upi-money-1:before { content: '\f0d6'; } /* '' */
+.upi-cart-plus:before { content: '\f217'; } /* '' */
+.upi-cart-arrow-down:before { content: '\f218'; } /* '' */

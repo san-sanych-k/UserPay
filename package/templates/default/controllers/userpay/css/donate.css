@@ -1,0 +1,185 @@
+
+.uwd .description{
+	margin-bottom: 10px;
+}
+
+.uwd .donate{
+	display: inline-block;
+    background: coral;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 0;
+}
+
+.uwd .list{
+	margin-top: 10px;
+	height: 85px;
+	overflow-y: scroll;
+	padding-right: 5px;
+}
+
+.uwd .list a{
+	text-decoration: none;
+}
+
+.uwd .item{
+	font-size: 12px;
+	padding: 0 5px;
+}
+
+.uwd .item:nth-child(odd){
+	background: aliceblue;
+	border-radius: 3px
+}
+
+.uwd .amount{
+	font-size: 10px;
+	background: #ffe768;
+	border-radius: 3px;
+	padding: 0 3px;
+	color: #e67e55;
+}
+
+.uwd .dates{
+	float: right;
+	color: silver;
+	font-size: 10px;
+}
+
+.ft_donate .donate{
+	display: block;
+	margin: 10px 0;
+}
+
+.ft_donate .donate > a{
+	background: #2980b9;
+    color: white;
+    text-decoration: none;
+    padding: 5px 25px;
+    display: inline-block;
+    border-radius: 3px;
+    float: left;
+}
+
+.ft_donate .donate > .item{
+	float: left;
+    height: 26px;
+    line-height: 26px;
+    margin-left: 10px;
+}
+
+.ft_donate .amount {
+    font-size: 10px;
+    color: green;
+}
+
+.ft_donate img {
+    height: 26px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 7px;
+}
+
+.meter { 
+    height: 20px;
+    position: relative;
+    background-color: #ecf0f1;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.meter > div{
+	position: absolute;
+    top: 2px;
+    text-align: center;
+    width: calc(100% - 20px);
+}
+
+        .meter > span {
+            display: block;
+            height: 100%;
+            border-radius: 3px;
+            background-color: rgb(43,194,83);
+            background-image: -webkit-gradient(
+              linear,
+              left bottom,
+              left top,
+              color-stop(0, rgb(43,194,83)),
+              color-stop(1, rgb(84,240,84))
+             );
+            background-image: -moz-linear-gradient(
+              center bottom,
+              rgb(43,194,83) 37%,
+              rgb(84,240,84) 69%
+             );
+            -webkit-box-shadow: 
+              inset 0 2px 9px  rgba(255,255,255,0.3),
+              inset 0 -2px 6px rgba(0,0,0,0.4);
+            -moz-box-shadow: 
+              inset 0 2px 9px  rgba(255,255,255,0.3),
+              inset 0 -2px 6px rgba(0,0,0,0.4);
+            box-shadow: 
+              inset 0 2px 9px  rgba(255,255,255,0.3),
+              inset 0 -2px 6px rgba(0,0,0,0.4);
+            position: absolute;
+    left: 0;
+    top: 0;
+            overflow: hidden;
+        }
+        .meter > span:after, .animate > span > span {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background-image: 
+               -webkit-gradient(linear, 0 0, 100% 100%, 
+                  color-stop(.25, rgba(255, 255, 255, .2)), 
+                  color-stop(.25, transparent), color-stop(.5, transparent), 
+                  color-stop(.5, rgba(255, 255, 255, .2)), 
+                  color-stop(.75, rgba(255, 255, 255, .2)), 
+                  color-stop(.75, transparent), to(transparent)
+               );
+            background-image: 
+                -moz-linear-gradient(
+                  -45deg, 
+                  rgba(255, 255, 255, .2) 25%, 
+                  transparent 25%, 
+                  transparent 50%, 
+                  rgba(255, 255, 255, .2) 50%, 
+                  rgba(255, 255, 255, .2) 75%, 
+                  transparent 75%, 
+                  transparent
+               );
+            z-index: 1;
+            -webkit-background-size: 50px 50px;
+            -moz-background-size: 50px 50px;
+            -webkit-animation: move 2s linear infinite;
+               -webkit-border-top-right-radius: 8px;
+            -webkit-border-bottom-right-radius: 8px;
+                   -moz-border-radius-topright: 8px;
+                -moz-border-radius-bottomright: 8px;
+                       border-top-right-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                -webkit-border-top-left-radius: 20px;
+             -webkit-border-bottom-left-radius: 20px;
+                    -moz-border-radius-topleft: 20px;
+                 -moz-border-radius-bottomleft: 20px;
+                        border-top-left-radius: 20px;
+                     border-bottom-left-radius: 20px;
+            overflow: hidden;
+        }
+        
+        @-webkit-keyframes move {
+            0% {
+               background-position: 0 0;
+            }
+            100% {
+               background-position: 50px 50px;
+            }
+        }
